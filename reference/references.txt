@@ -1,0 +1,25 @@
+
+References:
+
+1: https://developers.google.com/identity/protocols/oauth2/web-server
+2: https://github.com/googleapis/google-api-php-client
+3: https://code.tutsplus.com/tutorials/create-a-google-login-page-in-php--cms-33214
+
+
+4: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_temp_webpage&stacked=h
+
+
+5: https://www.w3schools.com/php/php_mysql_connect.asp
+
+6: https://www.allphptricks.com/create-and-consume-simple-rest-api-in-php/
+
+7: https://www.webhostface.com/kb/knowledgebase/php-curl-examples/
+
+8: https://code.tutsplus.com/tutorials/how-to-use-curl-in-php--cms-36732
+
+
+====
+
+	{"data":[{"subject_id":"1","subject":"Sports"},{"subject_id":"2","subject":"Science & Technology"},{"subject_id":"3","subject":"Arts"},{"subject_id":"4","subject":"Politics"}],"response_code":200,"response_desc":"Ok"}
+
+==============

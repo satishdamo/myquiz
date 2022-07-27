@@ -1,0 +1,452 @@
+"<script>alert("Connection failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'q.subject_id' in 'where clause'");</script>"
+
+
+
+"Array
+(
+    [status] => 1
+    [data] => PDOStatement Object
+        (
+            [queryString] => SELECT question_id,question,level_id FROM mst_quiz_questions q where q.subject_id=1 and q.is_active=1 order by q.question_id,q.level_id asc
+        )
+
+)
+"
+
+
+
+{
+    "question_id": 1,
+    "question": "What is his world record time for the 100 metres?",
+    "level_id": 1
+}
+
+
+
+
+
+dashboard.php:179 <br />
+<b>Warning</b>:  Undefined array key "question_id" in <b>C:\xampp\htdocs\myquiz\process_data.php</b> on line <b>50</b><br />
+<br />
+<b>Warning</b>:  foreach() argument must be of type array|object, null given in <b>C:\xampp\htdocs\myquiz\process_data.php</b> on line <b>50</b><br />
+<br />
+<b>Fatal error</b>:  Uncaught TypeError: shuffle(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\myquiz\process_data.php:54
+Stack trace:
+#0 C:\xampp\htdocs\myquiz\process_data.php(54): shuffle(NULL)
+#1 {main}
+  thrown in <b>C:\xampp\htdocs\myquiz\process_data.php</b> on line <b>54</b><br />
+
+
+Array
+(
+    [0] => 1
+    [1] => 2
+    [2] => 3
+    [3] => 4
+    [4] => 5
+    [5] => 6
+    [6] => 7
+    [7] => 8
+    [8] => 9
+    [9] => 10
+)
+<br>Array
+(
+
+    [0] => 2
+    [1] => 6
+    [2] => 3
+    [3] => 7
+    [4] => 8
+    [5] => 5
+    [6] => 10
+    [7] => 4
+    [8] => 1
+    [9] => 9
+)
+
+
+
+
+arrQuestionsNoptionsData
+
+dashboard.php:179 
+
+
+[
+	{"question_id":1,
+ "option_id":[ {"option_id":1,"option":"9.58 seconds"},
+               {"option_id":2,"option":"9.50 seconds"},
+			   {"option_id":3,"option":"9.52 seconds"},
+			   {"option_id":4,"option":"9.40 seconds"}
+			  ],
+"level_id":1,"subject_id":1
+},
+
+{"question_id":2,"option_id":[{"option_id":5,"option":"5"},{"option_id":6,"option":"4"},{"option_id":7,"option":"2"},{"option_id":8,"option":"1"}],"level_id":1,"subject_id":1},{"question_id":3,"option_id":[{"option_id":9,"option":"Golf"},{"option_id":10,"option":"Tennis"},{"option_id":11,"option":"Cricket"},{"option_id":12,"option":"Football"}],"level_id":1,"subject_id":1},{"question_id":4,"option_id":[{"option_id":13,"option":"Blue, black, green, red and yellow"},{"option_id":14,"option":"Blue, black, green, red and orange"},{"option_id":15,"option":"Pink, black, green, red and yellow."},{"option_id":16,"option":"Blue, white, green, red and yellow"}],"level_id":1,"subject_id":1},{"question_id":5,"option_id":[{"option_id":17,"option":"Women's ice hockey"},{"option_id":18,"option":"Men's ice hockey"},{"option_id":19,"option":"Men's tennis"},{"option_id":20,"option":"Women's tennis"}],"level_id":2,"subject_id":1},{"question_id":6,"option_id":[{"option_id":21,"option":"Germany"},{"option_id":22,"option":"Brazil"},{"option_id":23,"option":"India"},{"option_id":24,"option":"Uruguay"}],"level_id":2,"subject_id":1},{"question_id":7,"option_id":[{"option_id":25,"option":"Basketball"},{"option_id":26,"option":"Baseball"},{"option_id":27,"option":"Tennis"},{"option_id":28,"option":"Golf"}],"level_id":2,"subject_id":1},{"question_id":8,"option_id":[{"option_id":29,"option":"125"},{"option_id":30,"option":"182"},{"option_id":31,"option":"120"},{"option_id":32,"option":"147"}],"level_id":3,"subject_id":1},{"question_id":9,"option_id":[{"option_id":33,"option":"Hockey"},{"option_id":34,"option":"Golf"},{"option_id":35,"option":"Lacrosse"},{"option_id":36,"option":"Tennis"}],"level_id":3,"subject_id":1},{"question_id":10,"option_id":[{"option_id":37,"option":"Michael Schumacher"},{"option_id":38,"option":"Lewis Hamilton"},{"option_id":39,"option":"Sebastian Vettel"},{"option_id":40,"option":"Alain Prost"}],"level_id":3,"subject_id":1}]
+
+
+
+
+
+===============
+
+[
+{"question_id":1,"option_id":[{"option_id":1,"option":"9.58 seconds"},{"option_id":4,"option":"9.40 seconds"},{"option_id":2,"option":"9.50 seconds"},{"option_id":3,"option":"9.52 seconds"}],"level_id":1,"subject_id":1},
+{"question_id":2,"option_id":[{"option_id":5,"option":"5"},{"option_id":6,"option":"4"},{"option_id":8,"option":"1"},{"option_id":7,"option":"2"}],"level_id":1,"subject_id":1},{"question_id":3,"option_id":[{"option_id":10,"option":"Tennis"},{"option_id":11,"option":"Cricket"},{"option_id":12,"option":"Football"},{"option_id":9,"option":"Golf"}],"level_id":1,"subject_id":1},{"question_id":4,"option_id":[{"option_id":16,"option":"Blue, white, green, red and yellow"},{"option_id":15,"option":"Pink, black, green, red and yellow."},{"option_id":14,"option":"Blue, black, green, red and orange"},{"option_id":13,"option":"Blue, black, green, red and yellow"}],"level_id":1,"subject_id":1},{"question_id":5,"option_id":[{"option_id":17,"option":"Women's ice hockey"},{"option_id":18,"option":"Men's ice hockey"},{"option_id":20,"option":"Women's tennis"},{"option_id":19,"option":"Men's tennis"}],"level_id":2,"subject_id":1},{"question_id":6,"option_id":[{"option_id":21,"option":"Germany"},{"option_id":23,"option":"India"},{"option_id":22,"option":"Brazil"},{"option_id":24,"option":"Uruguay"}],"level_id":2,"subject_id":1},{"question_id":7,"option_id":[{"option_id":28,"option":"Golf"},{"option_id":27,"option":"Tennis"},{"option_id":25,"option":"Basketball"},{"option_id":26,"option":"Baseball"}],"level_id":2,"subject_id":1},{"question_id":8,"option_id":[{"option_id":31,"option":"120"},{"option_id":29,"option":"125"},{"option_id":30,"option":"182"},{"option_id":32,"option":"147"}],"level_id":3,"subject_id":1},{"question_id":9,"option_id":[{"option_id":34,"option":"Golf"},{"option_id":36,"option":"Tennis"},{"option_id":33,"option":"Hockey"},{"option_id":35,"option":"Lacrosse"}],"level_id":3,"subject_id":1},{"question_id":10,"option_id":[{"option_id":39,"option":"Sebastian Vettel"},{"option_id":40,"option":"Alain Prost"},{"option_id":37,"option":"Michael Schumacher"},{"option_id":38,"option":"Lewis Hamilton"}],"level_id":3,"subject_id":1}]
+
+
+==================
+
+[
+{ "question":"What is his world record time for the 100 metres?",
+  "question_id":1,
+  "options":
+  [ {"option_id":1,"option":"9.58 seconds"},
+    {"option_id":3,"option":"9.52 seconds"},
+	{"option_id":2,"option":"9.50 seconds"},
+	{"option_id":4,"option":"9.40 seconds"}
+	],
+	"level_id":1,
+	"subject_id":1 
+	},
+	
+	==========
+<div class='divQuestion' data-question-id='10'>1
+<label>Which Formula 1 driver has won the most races in the history of the sport?</label>
+<ul>
+	<li><input name="optionSelected" type="radio" value="39"/>Sebastian Vettel</li>
+	<li><input name="optionSelected" type="radio" value="37"/>Michael Schumacher</li>
+	<li><input name="optionSelected" type="radio" value="40"/>Alain Prost</li>
+	<li><input name="optionSelected" type="radio" value="38"/>Lewis Hamilton</li>
+</ul><buton class="btn btn-success btn-sm">Next</button>
+</div><br/>
+
+==========
+
+
+﻿
+dashboard.php:195 <div class='divQuestion' data-question-id='1'><label>What is his world record time for the 100 metres?</label><ul><li><input name="optionSelected" type="radio" value="1"/>9.58 seconds</li><li><input name="optionSelected" type="radio" value="2"/>9.50 seconds</li><li><input name="optionSelected" type="radio" value="3"/>9.52 seconds</li><li><input name="optionSelected" type="radio" value="4"/>9.40 seconds</li></ul><buton class="btn btn-success btn-sm">Next</button></div><br/><div class='divQuestion' data-question-id='2'><label>How many regulation strokes are there in swimming?</label><ul><li><input name="optionSelected" type="radio" value="7"/>2</li><li><input name="optionSelected" type="radio" value="6"/>4</li><li><input name="optionSelected" type="radio" value="8"/>1</li><li><input name="optionSelected" type="radio" value="5"/>5</li></ul><buton class="btn btn-success btn-sm">Next</button></div><br/><div class='divQuestion' data-question-id='3'><label>What sport is described as “the beautiful game?</label><ul><li><input name="optionSelected" type="radio" value="9"/>Golf</li><li><input name="optionSelected" type="radio" value="11"/>Cricket</li><li><input name="optionSelected" type="radio" value="10"/>Tennis</li><li><input name="optionSelected" type="radio" value="12"/>Football</li></ul><buton class="btn btn-success btn-sm">Next</button></div><br/><div class='divQuestion' data-question-id='4'><label>What five colours make up the Olympic rings?</label><ul><li><input name="optionSelected" type="radio" value="14"/>Blue, black, green, red and orange</li><li><input name="optionSelected" type="radio" value="16"/>Blue, white, green, red and yellow</li><li><input name="optionSelected" type="radio" value="13"/>Blue, black, green, red and yellow</li><li><input name="optionSelected" type="radio" value="15"/>Pink, black, green, red and yellow.</li></ul><buton class="btn btn-success btn-sm">Next</button></div><br/><div class='divQuestion' data-question-id='5'><label>In which sport do teams compete to win the Stanley Cup?</label><ul><li><input name="optionSelected" type="radio" value="19"/>Men's tennis</li><li><input name="optionSelected" type="radio" value="20"/>Women's tennis</li><li><input name="optionSelected" type="radio" value="17"/>Women's ice hockey</li><li><input name="optionSelected" type="radio" value="18"/>Men's ice hockey</li></ul><buton class="btn btn-success btn-sm">Next</button></div><br/><div class='divQuestion' data-question-id='6'><label>Which country won the first ever football world cup?</label><ul><li><input name="optionSelected" type="radio" value="24"/>Uruguay</li><li><input name="optionSelected" type="radio" value="21"/>Germany</li><li><input name="optionSelected" type="radio" value="23"/>India</li><li><input name="optionSelected" type="radio" value="22"/>Brazil</li></ul><buton class="btn btn-success btn-sm">Next</button></div><br/><div class='divQuestion' data-question-id='7'><label>The Chicago Cubs and Boston Red Sox play which sport?</label><ul><li><input name="optionSelected" type="radio" value="27"/>Tennis</li><li><input name="optionSelected" type="radio" value="25"/>Basketball</li><li><input name="optionSelected" type="radio" value="26"/>Baseball</li><li><input name="optionSelected" type="radio" value="28"/>Golf</li></ul><buton class="btn btn-success btn-sm">Next</button></div><br/><div class='divQuestion' data-question-id='8'><label>What is the maximum break you can score in snooker?</label><ul><li><input name="optionSelected" type="radio" value="30"/>182</li><li><input name="optionSelected" type="radio" value="31"/>120</li><li><input name="optionSelected" type="radio" value="32"/>147</li><li><input name="optionSelected" type="radio" value="29"/>125</li></ul><buton class="btn btn-success btn-sm">Next</button></div><br/><div class='divQuestion' data-question-id='9'><label>What is Canada’s national sport?</label><ul><li><input name="optionSelected" type="radio" value="33"/>Hockey</li><li><input name="optionSelected" type="radio" value="34"/>Golf</li><li><input name="optionSelected" type="radio" value="36"/>Tennis</li><li><input name="optionSelected" type="radio" value="35"/>Lacrosse</li></ul><buton class="btn btn-success btn-sm">Next</button></div><br/><div class='divQuestion' data-question-id='10'><label>Which Formula 1 driver has won the most races in the history of the sport?</label><ul><li><input name="optionSelected" type="radio" value="37"/>Michael Schumacher</li><li><input name="optionSelected" type="radio" value="40"/>Alain Prost</li><li><input name="optionSelected" type="radio" value="39"/>Sebastian Vettel</li><li><input name="optionSelected" type="radio" value="38"/>Lewis Hamilton</li></ul><buton class="btn btn-success btn-sm">Next</button></div><br/>
+
+================\\
+
+{
+    "attempt_id": "1",
+    "question_id": "1",
+    "option_id": "4"
+}
+
+============
+
+[{"attempt_id":20,"question":"What is his world record time for the 100 metres?","question_id":"1","options":[{"option_id":"1","option":"9.58 seconds"},{"option_id":"2","option":"9.50 seconds"},{"option_id":"3","option":"9.52 seconds"},{"option_id":"4","option":"9.40 seconds"}],"level_id":"1","subject_id":"1"},{"attempt_id":20,"question":"How many regulation strokes are there in swimming?","question_id":"2","options":[{"option_id":"6","option":"4"},{"option_id":"5","option":"5"},{"option_id":"8","option":"1"},{"option_id":"7","option":"2"}],"level_id":"1","subject_id":"1"},{"attempt_id":20,"question":"What sport is described as \u201cthe beautiful game?","question_id":"3","options":[{"option_id":"11","option":"Cricket"},{"option_id":"12","option":"Football"},{"option_id":"9","option":"Golf"},{"option_id":"10","option":"Tennis"}],"level_id":"1","subject_id":"1"},{"attempt_id":20,"question":"What five colours make up the Olympic rings?","question_id":"4","options":[{"option_id":"14","option":"Blue, black, green, red and orange"},{"option_id":"16","option":"Blue, white, green, red and yellow"},{"option_id":"15","option":"Pink, black, green, red and yellow."},{"option_id":"13","option":"Blue, black, green, red and yellow"}],"level_id":"1","subject_id":"1"},{"attempt_id":20,"question":"In which sport do teams compete to win the Stanley Cup?","question_id":"5","options":[{"option_id":"17","option":"Women's ice hockey"},{"option_id":"20","option":"Women's tennis"},{"option_id":"19","option":"Men's tennis"},{"option_id":"18","option":"Men's ice hockey"}],"level_id":"2","subject_id":"1"},{"attempt_id":20,"question":"Which country won the first ever football world cup?","question_id":"6","options":[{"option_id":"24","option":"Uruguay"},{"option_id":"22","option":"Brazil"},{"option_id":"21","option":"Germany"},{"option_id":"23","option":"India"}],"level_id":"2","subject_id":"1"},{"attempt_id":20,"question":"The Chicago Cubs and Boston Red Sox play which sport?","question_id":"7","options":[{"option_id":"28","option":"Golf"},{"option_id":"26","option":"Baseball"},{"option_id":"27","option":"Tennis"},{"option_id":"25","option":"Basketball"}],"level_id":"2","subject_id":"1"},{"attempt_id":20,"question":"What is the maximum break you can score in snooker?","question_id":"8","options":[{"option_id":"30","option":"182"},{"option_id":"29","option":"125"},{"option_id":"31","option":"120"},{"option_id":"32","option":"147"}],"level_id":"3","subject_id":"1"},{"attempt_id":20,"question":"What is Canada\u2019s national sport?","question_id":"9","options":[{"option_id":"35","option":"Lacrosse"},{"option_id":"33","option":"Hockey"},{"option_id":"36","option":"Tennis"},{"option_id":"34","option":"Golf"}],"level_id":"3","subject_id":"1"},{"attempt_id":20,"question":"Which Formula 1 driver has won the most races in the history of the sport?","question_id":"10","options":[{"option_id":"37","option":"Michael Schumacher"},{"option_id":"39","option":"Sebastian Vettel"},{"option_id":"40","option":"Alain Prost"},{"option_id":"38","option":"Lewis Hamilton"}],"level_id":"3","subject_id":"1"}]
+
+
+=================
+
+[
+    {
+        "attempt_id": 20,
+        "question": "What is his world record time for the 100 metres?",
+        "question_id": "1",
+        "options": [
+            {
+                "option_id": "1",
+                "option": "9.58 seconds"
+            },
+            {
+                "option_id": "2",
+                "option": "9.50 seconds"
+            },
+            {
+                "option_id": "3",
+                "option": "9.52 seconds"
+            },
+            {
+                "option_id": "4",
+                "option": "9.40 seconds"
+            }
+        ],
+        "level_id": "1",
+        "subject_id": "1"
+    },
+    {
+        "attempt_id": 20,
+        "question": "How many regulation strokes are there in swimming?",
+        "question_id": "2",
+        "options": [
+            {
+                "option_id": "6",
+                "option": "4"
+            },
+            {
+                "option_id": "5",
+                "option": "5"
+            },
+            {
+                "option_id": "8",
+                "option": "1"
+            },
+            {
+                "option_id": "7",
+                "option": "2"
+            }
+        ],
+        "level_id": "1",
+        "subject_id": "1"
+    },
+    {
+        "attempt_id": 20,
+        "question": "What sport is described as “the beautiful game?",
+        "question_id": "3",
+        "options": [
+            {
+                "option_id": "11",
+                "option": "Cricket"
+            },
+            {
+                "option_id": "12",
+                "option": "Football"
+            },
+            {
+                "option_id": "9",
+                "option": "Golf"
+            },
+            {
+                "option_id": "10",
+                "option": "Tennis"
+            }
+        ],
+        "level_id": "1",
+        "subject_id": "1"
+    },
+    {
+        "attempt_id": 20,
+        "question": "What five colours make up the Olympic rings?",
+        "question_id": "4",
+        "options": [
+            {
+                "option_id": "14",
+                "option": "Blue, black, green, red and orange"
+            },
+            {
+                "option_id": "16",
+                "option": "Blue, white, green, red and yellow"
+            },
+            {
+                "option_id": "15",
+                "option": "Pink, black, green, red and yellow."
+            },
+            {
+                "option_id": "13",
+                "option": "Blue, black, green, red and yellow"
+            }
+        ],
+        "level_id": "1",
+        "subject_id": "1"
+    },
+    {
+        "attempt_id": 20,
+        "question": "In which sport do teams compete to win the Stanley Cup?",
+        "question_id": "5",
+        "options": [
+            {
+                "option_id": "17",
+                "option": "Women's ice hockey"
+            },
+            {
+                "option_id": "20",
+                "option": "Women's tennis"
+            },
+            {
+                "option_id": "19",
+                "option": "Men's tennis"
+            },
+            {
+                "option_id": "18",
+                "option": "Men's ice hockey"
+            }
+        ],
+        "level_id": "2",
+        "subject_id": "1"
+    },
+    {
+        "attempt_id": 20,
+        "question": "Which country won the first ever football world cup?",
+        "question_id": "6",
+        "options": [
+            {
+                "option_id": "24",
+                "option": "Uruguay"
+            },
+            {
+                "option_id": "22",
+                "option": "Brazil"
+            },
+            {
+                "option_id": "21",
+                "option": "Germany"
+            },
+            {
+                "option_id": "23",
+                "option": "India"
+            }
+        ],
+        "level_id": "2",
+        "subject_id": "1"
+    },
+    {
+        "attempt_id": 20,
+        "question": "The Chicago Cubs and Boston Red Sox play which sport?",
+        "question_id": "7",
+        "options": [
+            {
+                "option_id": "28",
+                "option": "Golf"
+            },
+            {
+                "option_id": "26",
+                "option": "Baseball"
+            },
+            {
+                "option_id": "27",
+                "option": "Tennis"
+            },
+            {
+                "option_id": "25",
+                "option": "Basketball"
+            }
+        ],
+        "level_id": "2",
+        "subject_id": "1"
+    },
+    {
+        "attempt_id": 20,
+        "question": "What is the maximum break you can score in snooker?",
+        "question_id": "8",
+        "options": [
+            {
+                "option_id": "30",
+                "option": "182"
+            },
+            {
+                "option_id": "29",
+                "option": "125"
+            },
+            {
+                "option_id": "31",
+                "option": "120"
+            },
+            {
+                "option_id": "32",
+                "option": "147"
+            }
+        ],
+        "level_id": "3",
+        "subject_id": "1"
+    },
+    {
+        "attempt_id": 20,
+        "question": "What is Canada’s national sport?",
+        "question_id": "9",
+        "options": [
+            {
+                "option_id": "35",
+                "option": "Lacrosse"
+            },
+            {
+                "option_id": "33",
+                "option": "Hockey"
+            },
+            {
+                "option_id": "36",
+                "option": "Tennis"
+            },
+            {
+                "option_id": "34",
+                "option": "Golf"
+            }
+        ],
+        "level_id": "3",
+        "subject_id": "1"
+    },
+    {
+        "attempt_id": 20,
+        "question": "Which Formula 1 driver has won the most races in the history of the sport?",
+        "question_id": "10",
+        "options": [
+            {
+                "option_id": "37",
+                "option": "Michael Schumacher"
+            },
+            {
+                "option_id": "39",
+                "option": "Sebastian Vettel"
+            },
+            {
+                "option_id": "40",
+                "option": "Alain Prost"
+            },
+            {
+                "option_id": "38",
+                "option": "Lewis Hamilton"
+            }
+        ],
+        "level_id": "3",
+        "subject_id": "1"
+    }
+]
+
+===============
+
+[
+    {
+        "attempt_id": "23",
+        "question_id": "1",
+        "option_id": "1"
+    },
+    {
+        "attempt_id": "23",
+        "question_id": "2",
+        "option_id": "8"
+    },
+    {
+        "attempt_id": "23",
+        "question_id": "3",
+        "option_id": "9"
+    },
+    {
+        "attempt_id": "23",
+        "question_id": "4",
+        "option_id": "13"
+    },
+    {
+        "attempt_id": "23",
+        "question_id": "5",
+        "option_id": "17"
+    },
+    {
+        "attempt_id": "23",
+        "question_id": "6",
+        "option_id": "24"
+    },
+    {
+        "attempt_id": "23",
+        "question_id": "7",
+        "option_id": "28"
+    },
+    {
+        "attempt_id": "23",
+        "question_id": "8",
+        "option_id": "31"
+    },
+    {
+        "attempt_id": "23",
+        "question_id": "9",
+        "option_id": "33"
+    }
+]
+
+========================
+	"(26,1,3),(26,2,5),(26,3,12),(26,4,15),(26,5,20),(26,6,21),(26,7,25),(26,8,30),(26,9,35),(26,10,37)"
+	
+	==================

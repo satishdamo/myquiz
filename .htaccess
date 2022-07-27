@@ -1,0 +1,17 @@
+RewriteEngine On    # Turn on the rewriting engine
+
+DirectoryIndex login.php
+
+#Start the quiz for a choosen subject
+RewriteRule ^api/attempt api.php [NC,L]
+
+#save the anwers to database
+RewriteRule ^api/save api.php [NC,L]
+
+#delete attempt takent from database
+RewriteRule ^api/deleteAttempt api.php [NC,L]
+
+#get subjects
+RewriteRule ^api/getSubjects api.php?getSubjects=1 [NC,L]
+
+RewriteRule ^api/getLastattempt/([0-9a-zA-Z_-]*)$ api.php?getLastattempt=$1 [NC,L]

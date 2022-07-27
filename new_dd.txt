@@ -1,0 +1,22 @@
+"<script>alert("Connection failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'q.subject_id' in 'where clause'");</script>"
+
+
+
+"Array
+(
+    [status] => 1
+    [data] => PDOStatement Object
+        (
+            [queryString] => SELECT question_id,question,level_id FROM mst_quiz_questions q where q.subject_id=1 and q.is_active=1 order by q.question_id,q.level_id asc
+        )
+
+)
+"
+
+
+
+{
+    "question_id": 1,
+    "question": "What is his world record time for the 100 metres?",
+    "level_id": 1
+}
