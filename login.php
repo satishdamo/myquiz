@@ -3,8 +3,8 @@ session_start();
 require_once 'vendor/autoload.php';
   
 // init configuration
-$clientID = '857382472644-a56ukal0skobuokh3boln6rff5j5cfrg.apps.googleusercontent.com';
-$clientSecret = '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';
+$clientID = '';
+$clientSecret = '';
 $redirectUri = 'http://localhost/myquiz/login.php';
    
 // create Client Request to access Google API
